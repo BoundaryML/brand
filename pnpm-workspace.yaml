@@ -1,0 +1,3 @@
+overrides:
+  "@terrazzo/parser": 2.9.0
+  "@terrazzo/token-tools": 2.9.0

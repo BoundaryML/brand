@@ -1,0 +1,32 @@
+{
+  "name": "@boundaryml/brand",
+  "version": "1.0.0",
+  "description": "Boundary and BAML brand tokens, logos and favicons",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "github:BoundaryML/brand",
+  "files": [
+    "agents.md",
+    "design.md",
+    "tokens.json",
+    "dist",
+    "logo"
+  ],
+  "exports": {
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.json": "./tokens.json",
+    "./design.md": "./design.md",
+    "./agents.md": "./agents.md",
+    "./logo/*": "./logo/*"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "build": "tz build",
+    "check": "tz build && test -z \"$(git status --porcelain --untracked-files=all -- dist)\""
+  },
+  "devDependencies": {
+    "@terrazzo/cli": "2.9.0",
+    "@terrazzo/plugin-css": "2.9.0",
+    "@terrazzo/token-tools": "2.9.0"
+  }
+}
