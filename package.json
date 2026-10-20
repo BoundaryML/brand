@@ -1,7 +1,7 @@
 {
   "name": "@boundaryml/brand",
-  "version": "1.0.0",
-  "description": "Boundary and BAML brand tokens, logos and favicons",
+  "version": "1.1.0",
+  "description": "Boundary and BAML brand tokens, logos, favicons and imagery",
   "license": "UNLICENSED",
   "private": true,
   "repository": "github:BoundaryML/brand",
@@ -10,14 +10,16 @@
     "design.md",
     "tokens.json",
     "dist",
-    "logo"
+    "logo",
+    "imagery"
   ],
   "exports": {
     "./tokens.css": "./dist/tokens.css",
     "./tokens.json": "./tokens.json",
     "./design.md": "./design.md",
     "./agents.md": "./agents.md",
-    "./logo/*": "./logo/*"
+    "./logo/*": "./logo/*",
+    "./imagery/*": "./imagery/*"
   },
   "packageManager": "pnpm@11.9.0",
   "scripts": {
